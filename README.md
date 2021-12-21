@@ -1,4 +1,7 @@
-# doormate-v1
+<<<<<<< README.md
+# Doormate Webseite
+
+Webseite für das Doormate-Projekt des Faches Interaktive Systeme des Studienganges huc.
 
 ## Project setup
 ```
@@ -22,3 +25,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# Doormate Website
+
+Webseite für das Doormate-Projekt für den Kurs Interaktive Systeme.
+>>>>>>> README.md
