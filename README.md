@@ -1,4 +1,3 @@
-<<<<<<< README.md
 # Doormate Webseite
 
 Webseite für das Doormate-Projekt des Faches Interaktive Systeme des Studienganges huc.
@@ -25,4 +24,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> README.md
