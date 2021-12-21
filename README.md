@@ -25,8 +25,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# Doormate Website
-
-Webseite für das Doormate-Projekt für den Kurs Interaktive Systeme.
 >>>>>>> README.md
