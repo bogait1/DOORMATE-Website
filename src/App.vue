@@ -3,11 +3,16 @@
   <div id="app">
     <div class="container-fluid">
       <!--Topbar start-->
-      <div id="toprow" class="d-flex justify-content-between align-items-center">
-        <div class="p-3">
-          <img id="logo" alt="Vue logo" src="./assets/tempLogo.png">
+      <div id="toprow" class="d-flex justify-content-between align-items-end">
+        <div id="logo" class="p-4 d-flex">
+          <div class="p-1">
+            <img id="logo-image" src="./assets/logo.png">
+          </div>
+          <div class="p-3">
+            <p id="logo-text">Doormate</p>
+          </div>
         </div>
-        <div class="p-3">
+        <div class="p-8">
           <p id="menubutton">Menü</p>
         </div>
       </div>
@@ -61,16 +66,26 @@ export default {
 }
 
 var opacity = 0;
+//var logoImage = document.getElementById("logo-image");
 document.onscroll = function() {
+
+  // changes the opacity of the toprow
   opacity = window.scrollY / 300;
-  document.getElementById("toprow").style = "background-color: rgba(64, 64, 191," + opacity + ");";
+  document.getElementById("toprow").style = "background-color: rgba(98, 98, 226," + opacity + ");";
+
+  // shrinks the icon
+  if (window.scrollY > 30) {
+    document.getElementById("logo-image").style = "height: 80px;";
+  } else {
+    document.getElementById("logo-image").style = "height: 250px;";
+  }
 }
 
 </script>
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Spartan:wght@800&display=swap');
 
 body {
   background-image: url("./assets/placeholder-image.png") !important;
@@ -107,15 +122,15 @@ body {
  }
 
 #toprow {
-  height: 15vh;
   position: fixed;
+  height: 12vh;
   width: 100%;
-  padding: 0 100px 0 100px;
+  padding: 0 100px 0 20px;
 }
 
 #inforow {
   background-color: rgba(64, 64, 191);
-  height: 50vh;
+  height: auto;
 }
 
 #inforow p {
@@ -129,6 +144,18 @@ body {
 }
 
 #logo {
+  padding: 0 !important;
+  height: 100px;
+}
+
+#logo-image {
+  height: 250px;
+  transition: height .25s;
+}
+
+#logo-text {
+  font-family: 'Spartan';
+  font-size: 45px;
   width: 200px;
   min-height: 4vh;
   padding: 0;
