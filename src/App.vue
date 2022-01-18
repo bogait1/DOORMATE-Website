@@ -1,5 +1,4 @@
 <template>
-
   <div v-on:keyup.enter="handleEnter()" id="app">
     <div class="container-fluid">
       <!--Topbar start-->
@@ -38,8 +37,18 @@
 
       <!--info bar start-->
       <div class="inforow d-flex align-items-start">
+        <!--
         <p class="col">inforow 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit sodales sodales. Aliquam erat volutpat. Duis euismod rhoncus purus feugiat sodales. Aenean sit amet lobortis ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque non augue rhoncus, tincidunt ipsum vitae, accumsan risus. Proin at maximus ipsum. In mollis vehicula orci, in dignissim dolor rhoncus sed. Fusce tempor ante eget nibh fermentum pellentesque. Fusce viverra ut ipsum sagittis placerat. Duis leo erat, eleifend quis mi eget, pulvinar accumsan ligula. Praesent et lorem accumsan, iaculis nunc quis, posuere diam. Donec hendrerit dolor at ex laoreet tempor. Nunc elementum dignissim massa quis consequat.
+        </p>
+        -->
+        <p class="col">
+          DOORMATE ist ein Prototyp einer intelligenten Fußmatte zur Verwendung in Smart Homes und Geschäften. Sie wurde als Hausarbeit im Fach
+          Interaktive Systeme des Studienganges Human Centered Computing der Hochschule Reutlingen von Boris Garkusha, Niko Gaiser und Tim Jüstel konzipiert. Diese Webseite
+          dient der Dokumentation der erbrachten Arbeit und beinhaltet dafür mehrere Literaturrecherchen, Anwendungsfälle und Erfahrungen, die mit
+          der Arbeit mit einem physischen Prototypen gemacht wurden. Zusätzlich wird ein Prototyp für eine Smartphone-Anwendung präsentiert, mit
+          der sich die Matte kontaktlos steuern lässt. Es werden die Stärken und Schwächen einer solchen Fußmatte mit Betracht auf verschiedene Faktoren
+          erläutert und es werden Schlüsse hinsichtlich der Benutzbarkeit der Matte im Realfall gezogen.
         </p>
       </div>
       <!--info bar end-->
@@ -48,7 +57,9 @@
       <!--info button start-->
       <div class="inforow d-flex justify-content-between">
         <p class="col-sm"></p>
-        <p tabindex="3" class="primary-button col-sm">Mehr Information</p>
+          <p tabindex="3" class="primary-button col-sm">
+            Mehr Information
+          </p>
         <p class="col-sm"></p>
       </div>
       <!--info button end-->
@@ -102,7 +113,7 @@ document.onscroll = function() {
 
   // shrinks the icon
   if (window.scrollY > 30) {
-    document.getElementById("logo-image").style = "height: 80px;";
+    document.getElementById("logo-image").style = "height: 90px;";
   } else {
     document.getElementById("logo-image").style = "height: 250px;";
   }
@@ -111,9 +122,11 @@ document.onscroll = function() {
   if (window.scrollY + 500 > documentHeight) {
     document.getElementById("down-arrow").style.opacity = 0;
     document.getElementById("down-arrow").disabled = true;
+    document.getElementById("down-arrow").style.cursor = "auto";
   } else {
     document.getElementById("down-arrow").style.opacity = 255;
     document.getElementById("down-arrow").disabled = false;
+    document.getElementById("down-arrow").style.cursor = "pointer";
   }
 }
 
@@ -190,9 +203,15 @@ body {
 
 #toprow {
   position: fixed;
-  height: 12vh;
+  height: 130px;
   width: 100%;
-  padding: 0 100px 0 20px;
+  padding: 0 27px 0 20px;
+
+   user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .inforow {
@@ -217,7 +236,7 @@ body {
 
 #logo-image {
   height: 250px;
-  transition: height .25s;
+  transition: .25s;
 }
 
 #logo-text {
