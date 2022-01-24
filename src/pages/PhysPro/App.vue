@@ -31,7 +31,7 @@
         <div class= "d-flex justify-content-between">
           <p class="col-sm"></p>
           <p class="col-sm">
-            TODO: youtube video einbetten
+            <iframe width="1149" height="646" src="https://www.youtube.com/embed/uWwkEhTAt8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </p>
           <p class="col-sm"></p>
         </div>

@@ -308,27 +308,56 @@
       <div class="d-flex" style="height: 50px; background-color: rgba(0,0,0,0)"></div>
       <!--spacer 7 end-->
 
-      <!--Erfahrungen section start-->
+      <!--Phsyischer Prototyp section start-->
       <div class="main-section">
         <div style="background-color:" class='row'>
           <div class="col-5">
             <h1>Physischer Prototyp</h1>
+            <p style="font-size: 16px"><a style="text-decoration: underline !important" href="/physprototype">Klicken Sie hier, um zu einer detaillierten Beschreibung des Prototypen zu gelangen</a></p>
             <p>
-              TODO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a corrupti totam tempore ducimus, commodi et doloribus 
-              corporis quis autem sint expedita facilis? Error dignissimos esse ipsum debitis consectetur eos.
+              Ein physischer Prototyp wurde zur Evaluierung der präsentierten Ideen entwickelt. Da es sich nur um einen Prototyp mit eingegrenzten Fähigkeiten handelt, wurde ein Nutzungszweck ausgewählt, der simuliert werden soll: das Personenzählen. Mit diesen Daten können auf der Matte entsprechend noch zusammenhängende Informationen angezeigt werden.
             </p>
           </div>
           <div class="col-1"></div>
           <div class="col-6">
-            <img v-on:click="openImage('/img/UseCaseFußmatte.fed0c6aa.png')" class="main-section-image" src="../../assets/placeholder-image.png">
+            <img v-on:click="openImage('/img/physpro1.33bfd423.png')" class="main-section-image" src="../../assets/physpro1.png">
           </div>
         </div>
       </div>
-      <!--Erfahrungen section end-->
+      <!--Physischer Prototyp section end-->
 
       <!--spacer 8 start-->
       <div class="d-flex" style="height: 50px; background-color: rgba(0,0,0,0)"></div>
       <!--spacer 8 end-->
+
+      <!--App Prototyp start-->
+
+      <div class="main-section">
+        <div style="background-color:" class='row d-flex'>
+          <div class="col-5">
+            <h1>App Prototyp</h1>
+            <p style="font-size: 16px"><a style="text-decoration: underline !important" href="/appprototype">Klicken Sie hier, um zu einer detaillierten Beschreibung des Prototypen zu gelangen</a></p>
+            <p>
+            <p>
+              Um ein besseres Verständnis davon zu erhalten, wie eine solche intelligente Fußmatte zu betreiben wäre, haben wir einen Prototypen für eine Smartphone-App entwickelt. Dieser zeigt die Optionen, die der physische Prototyp besitzt, auf eine intuitive und einfach zu verstehende Art an. Der Prototyp lässt sich online mittels des Links oder des QR-Codes auf der rechten Seite finden.
+            </p>
+          </div>
+          <div class="col-1"></div>
+          <div id="app-pro" class="col-6">
+            <p><b>Probieren Sie den Prototypen 
+              <a 
+              style="text-decoration: underline !important"
+              href='https://www.figma.com/proto/WMvty66p2BqBe0OyAyAx7O/Untitled?page-id=0%3A1&node-id=33%3A249&viewport=241%2C48%2C0.47&scaling=scale-down&starting-point-node-id=2%3A4'>hier</a>
+              selbst aus!</b></p>
+            <img style="display: block; margin: auto" src="../../assets/qrcode.png">
+          </div>
+        </div>
+      </div>
+      <!--App Prototyp end-->
+
+      <!--spacer 9 start-->
+      <div class="d-flex" style="height: 50px; background-color: rgba(0,0,0,0)"></div>
+      <!--spacer 9 end-->
 
       <!--Fazit section start-->
       <div class="main-section">
@@ -488,6 +517,14 @@ tr td {
    border-bottom: 2px solid rgb(201, 201, 201);
    padding-left: 20px;
   }
+
+#app-pro {
+  background-color: white;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  border-radius: 15px;
+}
 
 #toprow {
   position: fixed;

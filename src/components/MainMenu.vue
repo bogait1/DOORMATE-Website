@@ -58,7 +58,7 @@ export default {
   display: inline-block;
   background-color: rgb(87, 87, 196);
   position: fixed;
-  min-width: 300px;
+  min-width: 400px;
   width: 20vw;
   height: min-content;
   border-radius: 14px;

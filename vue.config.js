@@ -19,7 +19,7 @@ module.exports = {
             chunks: ['chunk-vendors', 'chunk-common', 'physprototype']
         },
         appprototype: {
-            entry: 'src/pages/AppPrototype/main.js',
+            entry: 'src/pages/AppPro/main.js',
             template: 'public/index.html',
             title: 'DOORMATE App Prototyp',
             chunks: ['chunk-vendors', 'chunk-common', 'appprototype']
